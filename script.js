@@ -1,42 +1,42 @@
-// Mostrar datos
-document.getElementById("nombre").textContent = funcionario.nombre;
-document.getElementById("cargo").textContent = funcionario.cargo;
-document.getElementById("unidad").textContent = funcionario.unidad;
+document.getElementById("nombre").textContent=funcionario.nombre;
 
-// Botones
-document.getElementById("btnWhatsapp").href =
-    `https://wa.me/${funcionario.whatsapp}`;
+document.getElementById("cargo").textContent=funcionario.cargo;
 
-document.getElementById("btnLlamar").href =
-    `tel:${funcionario.telefono}`;
+document.getElementById("unidad").textContent=funcionario.unidad;
 
-document.getElementById("btnCorreo").href =
-    `mailto:${funcionario.correo}`;
+document.getElementById("txtWhatsapp").textContent=funcionario.telefono;
 
-// Descargar contacto (.vcf)
-document.getElementById("btnContacto").addEventListener("click", function(e){
+document.getElementById("txtCorreo").textContent=funcionario.correo;
 
-    e.preventDefault();
+document.getElementById("txtTelefono").textContent=funcionario.telefono;
 
-    const vcf =
-`BEGIN:VCARD
+document.getElementById("btnWhatsapp").href="https://wa.me/"+funcionario.whatsapp;
+
+document.getElementById("btnCorreo").href="mailto:"+funcionario.correo;
+
+document.getElementById("btnLlamar").href="tel:"+funcionario.telefono;
+
+document.getElementById("btnContacto").addEventListener("click",function(e){
+
+e.preventDefault();
+
+const vcf=`BEGIN:VCARD
 VERSION:3.0
 FN:${funcionario.nombre}
 TITLE:${funcionario.cargo}
 ORG:ENDE Corporación
-TEL;TYPE=CELL:${funcionario.telefono}
+TEL:${funcionario.telefono}
 EMAIL:${funcionario.correo}
 END:VCARD`;
 
-    const blob = new Blob([vcf], { type: "text/vcard" });
+const blob=new Blob([vcf],{type:"text/vcard"});
 
-    const enlace = document.createElement("a");
+const a=document.createElement("a");
 
-    enlace.href = URL.createObjectURL(blob);
+a.href=URL.createObjectURL(blob);
 
-    enlace.download = "Contacto.vcf";
+a.download="Contacto.vcf";
 
-    enlace.click();
+a.click();
 
-    URL.revokeObjectURL(enlace.href);
 });
