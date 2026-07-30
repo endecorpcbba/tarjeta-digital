@@ -16,12 +16,7 @@ body{
     min-height:100vh;
 
     background:
-    linear-gradient(
-        135deg,
-        rgba(0,62,126,.95),
-        rgba(0,91,172,.85)
-    ),
-    url("img/fondo-ende.png");
+       url("img/fondo-ende.png");
 
     background-size:cover;
 
