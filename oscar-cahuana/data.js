@@ -1,9 +1,9 @@
 const funcionario = {
-    nombre: "Gonzalo Sánchez",
-    cargo: "Técnico de Soporte a Usuarios",
-    unidad: "USTI - ENDE Corporación",
+    nombre: "Oscar Cahuana Alarcon",
+    cargo: "JEFE DEPTO. EJECUCION PROYECTOS GENERACION",
+    unidad: "GERENCIA DE EJECUCION DE PROYECTOS - ENDE Corporación",
 
-    telefono: "+59176410429",
-    whatsapp: "59176410429",
-    correo: "gonzalo.sanchez@ende.bo"
+    telefono: "+59172563747",
+    whatsapp: "59172563747",
+    correo: "oscar.cahuana@ende.bo"
 };
