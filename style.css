@@ -2,12 +2,17 @@
    TARJETA DIGITAL ENDE
    Diseño institucional
 ===================================== */
-*{
+
+
+* {
     box-sizing: border-box;
     font-family: "Segoe UI", Arial, sans-serif;
 }
 
+
+
 body {
+
     margin: 0;
     min-height: 100vh;
 
@@ -21,10 +26,15 @@ body {
         #003b71,
         #0078b8
     );
+
 }
 
+
+
 /* CONTENEDOR PRINCIPAL */
+
 .tarjeta {
+
     width: 360px;
     max-width: 95%;
 
@@ -39,129 +49,250 @@ body {
     box-shadow:
     0 15px 35px rgba(0,0,0,0.25);
 
+
     animation:
     aparecer 0.8s ease;
+
 }
+
+
 
 /* LOGO */
+
 .logo {
+
     width: 170px;
+
     margin-bottom: 20px;
+
 }
+
+
 
 /* FOTO */
+
 .foto {
+
     width: 130px;
+
     height: 130px;
+
     object-fit: cover;
+
     border-radius: 50%;
+
     border: 5px solid #0066a1;
+
 }
+
+
 
 /* NOMBRE */
+
 h1 {
+
     margin-top: 20px;
+
     margin-bottom: 8px;
+
     color:#003b71;
+
     font-size: 26px;
+
 }
+
+
 
 /* CARGO */
+
 h2 {
+
     font-size:18px;
+
     font-weight:500;
+
     margin:0;
+
     color:#444;
+
 }
+
+
 
 /* UNIDAD */
+
 p {
+
     margin-top:10px;
+
     font-size:16px;
+
     color:#666;
+
 }
+
+
 
 hr {
+
     border:0;
+
     height:1px;
+
     background:#ddd;
+
     margin:25px 0;
+
 }
+
+
 
 /* BOTONES */
+
 .boton {
+
     display:block;
+
     text-decoration:none;
+
     color:white;
+
     padding:14px;
+
     margin:12px 0;
+
     border-radius:15px;
+
     font-size:16px;
+
     font-weight:600;
+
+
     transition:
+
     transform .2s,
+
     opacity .2s;
+
 }
+
+
 
 .boton:hover {
+
     transform:scale(1.03);
+
     opacity:.9;
+
 }
+
+
 
 /* COLORES BOTONES */
+
+
 .whatsapp {
+
     background:#25D366;
+
 }
+
 
 .llamar {
+
     background:#0077cc;
+
 }
+
 
 .correo {
+
     background:#555;
+
 }
+
 
 .contacto {
+
     background:#7b3fe4;
+
 }
+
 
 .cita {
+
     background:#f39c12;
+
 }
+
 
 .web {
+
     background:#003b71;
+
 }
+
 
 .ubicacion {
+
     background:#e74c3c;
+
 }
+
+
 
 footer {
+
     font-size:13px;
+
     color:#777;
+
 }
+
+
 
 /* ANIMACION */
+
 @keyframes aparecer {
+
     from {
+
         opacity:0;
+
         transform:translateY(30px);
+
     }
-  
+
+
     to {
+
         opacity:1;
+
         transform:translateY(0);
+
     }
+
 }
 
+
+
 /* ADAPTACION CELULAR */
+
 @media(max-width:400px){
+
+
     .tarjeta {
+
         padding:25px 18px;
+
     }
 
+
     h1 {
+
         font-size:23px;
+
     }
+
+
 }
