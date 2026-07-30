@@ -47,17 +47,17 @@ body{
     -webkit-backdrop-filter:blur(10px);
 
 
-    border-radius:28px;
+    border-radius:15px;
 
 
-    padding:35px 25px;
+    padding:20px 15px;
 
 
     text-align:center;
 
 
     /* Borde corporativo */
-    border:3px solid rgba(255,255,255,0.6);
+    border:2px solid rgba(255,255,255,0.6);
 
 
     /* Sombra externa */
