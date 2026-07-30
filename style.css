@@ -13,17 +13,27 @@ font-family:Arial,Helvetica,sans-serif;
 
 body{
 
-background:#f3f5f8;
+    min-height:100vh;
 
-}
+    background:
+    linear-gradient(
+        135deg,
+        rgba(0,62,126,.95),
+        rgba(0,91,172,.85)
+    ),
+    url("img/fondo-ende.png");
 
-.contenedor{
+    background-size:cover;
 
-max-width:480px;
+    background-position:center;
 
-margin:auto;
+    display:flex;
 
-padding:40px 20px;
+    justify-content:center;
+
+    align-items:center;
+
+    padding:30px;
 
 }
 
