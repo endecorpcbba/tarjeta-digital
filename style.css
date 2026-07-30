@@ -34,43 +34,11 @@ body{
 
 .contenedor{
 
-    width:100%;
+max-width:480px;
 
-    max-width:600px;
+margin:auto;
 
-    /* Relleno semitransparente */
-    background:rgba(255,255,255,0.88);
-
-    /* Efecto vidrio */
-    backdrop-filter:blur(40px);
-
-    -webkit-backdrop-filter:blur(10px);
-
-
-    border-radius:15px;
-
-
-    padding:20px 15px;
-
-
-    text-align:center;
-
-
-    /* Borde corporativo */
-    border:2px solid rgba(255,255,255,0.6);
-
-
-    /* Sombra externa */
-    box-shadow:
-
-    0 15px 35px rgba(0,0,0,.30),
-
-    inset 0 0 20px rgba(0,91,172,.15);
-
-
-    position:relative;
-
-    overflow:hidden;
+padding:40px 20px;
 
 }
 
