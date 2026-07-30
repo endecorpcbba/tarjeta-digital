@@ -36,13 +36,13 @@ body{
 
     width:100%;
 
-    max-width:430px;
+    max-width:600px;
 
     /* Relleno semitransparente */
     background:rgba(255,255,255,0.88);
 
     /* Efecto vidrio */
-    backdrop-filter:blur(10px);
+    backdrop-filter:blur(40px);
 
     -webkit-backdrop-filter:blur(10px);
 
