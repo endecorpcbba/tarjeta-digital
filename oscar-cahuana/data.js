@@ -1,6 +1,6 @@
 const funcionario = {
     nombre: "Oscar Cahuana Alarcon",
-    cargo: "GERENTE DE EJECUCION PROYECTOS",
+    cargo: "GERENTE DE EJECUCION DE PROYECTOS",
     unidad: "GERENCIA DE EJECUCION DE PROYECTOS",
 
     telefono: "+59172563747",
